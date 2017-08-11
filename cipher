@@ -1,0 +1,16 @@
+
+
+def prompt():
+	letter = raw_input("enter in your letter: ")
+	key = raw_input("choose a number 1-26: ")
+
+	abc = "abcdefghijklmnopqrstuvwxyz"
+
+	#loop through letter characters one by one
+	for x in letter:
+		position = abc.find(x)
+
+		print(abc[int(position) + int(key)])
+
+
+prompt()
